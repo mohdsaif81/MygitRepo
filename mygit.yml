@@ -2,12 +2,12 @@
  - hosts: all
    become: yes
    tasks:
-  - name: install git on ubuntu
-    apt:
-     name: git
-     state: present
+   - name: install git on ubunt
+     apt:
+       name: git
+       state: present
 
-  - name: install tree
-    apt:
-      name: tree
-      state: present
+   - name: install tree
+     apt:
+       name: tree
+       state: present
