@@ -2,12 +2,15 @@
  - hosts: all
    become: yes
    tasks:
-   - name: install git on ubunt
+   - name: install git on ubuntu nodes
      apt:
-       name: git
+       name: apache2
        state: present
+     when: ansible_os_family =="Debian"
+   - name: i want to start webserver on ubuntu nodes
+     service:
+        name: apache2
+        state: started
+     when: ansible_os_family =="Debian"
 
-   - name: install tree
-     apt:
-       name: tree
-       state: present
+     #  "Redhat" == "Debian"
