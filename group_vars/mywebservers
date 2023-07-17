@@ -1,4 +1,4 @@
 ---
 myvar01: abc123
-mywebpackonubuntu: apace2
+mywebpackonubuntu: apache2
 mywebpackonredhat: httpd
