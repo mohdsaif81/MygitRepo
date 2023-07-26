@@ -2,3 +2,5 @@
 myvar01: abc123
 mywebpackonubuntu: apache2
 mywebpackonredhat: httpd
+myjavaonubuntu:
+myjavaonredhat:
