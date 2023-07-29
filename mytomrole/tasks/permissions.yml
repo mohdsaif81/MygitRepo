@@ -1,0 +1,6 @@
+---
+- name: grant ownership over the extracted folders
+  command: sudo chown -R tomcat:tomcat /opt/tomcat/
+
+- name: grant execute permisson on bin folder
+  comment: sudo chmod -R u+x /opt/tomcat/bin
